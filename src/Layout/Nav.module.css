@@ -1,0 +1,123 @@
+.wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileTitle{
+  display: block;
+  padding: 1.5rem 3.125rem 1.5rem 0;
+  color: #1EAE12;
+  font-weight: 900;
+}
+
+.navWrapper{
+  position: relative;
+}
+.menuIconContainer{
+  margin: 1.5rem;
+}
+
+.menuIcon{
+  color: #1EAE12;
+  stroke-width: 0.5rem;
+  stroke: #CFFF0F;
+}
+
+.nav{
+  /* outline:1px solid blue; */
+  min-width: 100vw ;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(255,255,255,0.45);
+
+}
+
+.xlNav {
+  display: none;
+}
+
+.navList{
+  padding-left: 1.125rem;
+  padding-bottom: 2.5rem; 
+}
+
+.navItem{
+  display: block;
+  padding: 1.25rem 5rem;
+  font-size: 1.25rem;
+  color:#1EAE12;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.15rem;
+}
+
+.navItem:hover{
+  background-color: #1EAE12;
+  color:antiquewhite;
+}
+
+.close{
+  color:red;
+  position: absolute;
+  top: 0.55rem;
+  right: 0.75rem;
+}
+
+@media only screen and (min-width: 48rem){
+  .mobileTitle, .navWrapper{
+    display: none;
+  }
+
+  .xlNav{
+    display: block;
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 1.125rem 2rem;
+    background-color: transparent;
+  }
+  .xlNavList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .xlNavItem{
+    display: block;
+    padding: 1.25rem 0.5rem;
+    color: rgb(249, 249, 249);
+    font-size: 0.85rem;
+  }
+
+  .xlNavItem:hover{
+    color:#CFFF0F;
+  }
+
+  .xlTitle{
+    font-size: 1.75rem;
+    color: #1EAE12;
+  }
+
+  .xlListFlex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 75rem){
+ .xlNav{
+  padding: 3.5rem;
+ }
+ .xlNavItem{
+  padding: 0.95rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.125rem;
+ }
+
+ .xlTitle{
+  font-size: 3rem;
+ }
+}
