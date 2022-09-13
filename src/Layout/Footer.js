@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css"
 import {Link} from "react-router-dom"
-
+import Logo from "../images/Logo-mobile.png";
 
 const Footer = () => {
   const email = "info@ilhaformosa.co.nz"
@@ -25,8 +25,8 @@ const Footer = () => {
           <ul>
             <li>
               <h2>
-                <Link className={styles.footerTitle} to="/">
-                  Ilha Formosa
+                <Link to="/">
+                  <img src={Logo}alt="logo"/>
                 </Link>
               </h2>
             </li>
