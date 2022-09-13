@@ -3,6 +3,8 @@ import styles from "./Nav.module.css"
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { useState } from "react";
+import LogoMobile from "../images/Logo-mobile.png"
+import Logo from "../images/Logo.png"
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,8 +14,8 @@ const Nav = () => {
   return (
     <div className={styles.wrapper}>
       <h1>
-        <Link className={styles.mobileTitle} to="/">
-          Ilha Formosa
+        <Link className={styles.LogoMobile} to="/">
+          <img src={LogoMobile} alt="mobile-Logo"/>
         </Link>
       </h1>
       <div className={styles.navWrapper}>
@@ -100,8 +102,8 @@ const Nav = () => {
 
           <li>
             <h1>
-              <Link className={styles.xlTitle} to="/">
-                Ilha Formosa
+              <Link to="/">
+                <img src={Logo}alt="Larger-Logo"/>
               </Link>
             </h1>
           </li>
