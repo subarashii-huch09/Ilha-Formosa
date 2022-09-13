@@ -71,6 +71,8 @@
   }
 
   .xlNav{
+    position: absolute;
+    top:5px;
     display: block;
     min-width: 100%;
     margin: 0 auto;
