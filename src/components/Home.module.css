@@ -1,0 +1,15 @@
+.mobileHomeBanner{
+  background-image: url("../images/HomeBanner-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:black;
+  height: 55vh;
+  width: 100vw;
+}
+
+@media only screen and (min-width: 48rem){
+  .mobileHomeBanner{
+    height: 90vh; 
+  }
+}
