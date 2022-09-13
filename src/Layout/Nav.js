@@ -43,32 +43,32 @@ const Nav = () => {
               <>
                 <li>
                   <NavLink className={styles.navItem} to="/menu">
-                    Menu
+                    MENU
                   </NavLink>
                 </li>
                 <li>
                   <NavLink className={styles.navItem} to="/reservations">
-                    Reservations
+                    RESERVATIONS
                   </NavLink>
                 </li>
                 <li>
                   <NavLink className={styles.navItem} to="/about">
-                    About
+                    ABOUT
                   </NavLink>
                 </li>
                 <li>
                   <NavLink className={styles.navItem} to="/order">
-                    Order
+                    ORDER
                   </NavLink>
                 </li>
                 <li>
                   <NavLink className={styles.navItem} to="/catering">
-                    Catering
+                    CATERING
                   </NavLink>
                 </li>
                 <li>
                   <NavLink className={styles.navItem} to="/location">
-                    Location
+                    LOCATION
                   </NavLink>
                 </li>
               </>
