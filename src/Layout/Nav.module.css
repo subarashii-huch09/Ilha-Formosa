@@ -5,11 +5,9 @@
   align-items: center;
 }
 
-.mobileTitle{
+.LogoMobile{
   display: block;
-  padding: 1.5rem 3.125rem 1.5rem 0;
-  color: #1EAE12;
-  font-weight: 900;
+  padding: 0.85rem  3rem 0.25rem  0.5rem;
 }
 
 .navWrapper{
@@ -26,7 +24,6 @@
 }
 
 .nav{
-  /* outline:1px solid blue; */
   min-width: 100vw ;
   height: 100vh;
   position: absolute;
@@ -47,10 +44,9 @@
   display: block;
   padding: 1.25rem 5rem;
   font-size: 1.25rem;
-  color:#1EAE12;
+  color: rgb(1, 0, 0);
   font-weight: 900;
   text-align: center;
-  letter-spacing: 0.15rem;
 }
 
 .navItem:hover{
@@ -66,18 +62,16 @@
 }
 
 @media only screen and (min-width: 48rem){
-  .mobileTitle, .navWrapper{
+  .LogoMobile, .navWrapper{
     display: none;
   }
 
   .xlNav{
-    position: absolute;
-    top:5px;
     display: block;
     min-width: 100%;
     margin: 0 auto;
-    padding: 1.125rem 2rem;
-    background-color: transparent;
+    padding: 1.15rem 1.2rem;
+    background-color:#E6F5E5 ;
   }
   .xlNavList{
     display: flex;
@@ -87,39 +81,29 @@
 
   .xlNavItem{
     display: block;
-    padding: 1.25rem 0.5rem;
-    color: rgb(249, 249, 249);
+    padding: 1.125rem;
     font-size: 0.85rem;
+    color: rgb(1, 0, 0);
+    font-weight: 900;
   }
 
   .xlNavItem:hover{
-    color:#CFFF0F;
-  }
-
-  .xlTitle{
-    font-size: 1.75rem;
-    color: #1EAE12;
+    color:#1EAE12;
   }
 
   .xlListFlex{
     display: flex;
     justify-content: space-between;
-    padding-top: 0.5rem;
   }
 }
 
 
 @media only screen and (min-width: 75rem){
  .xlNav{
-  padding: 3.5rem;
- }
- .xlNavItem{
-  padding: 0.95rem;
-  font-size: 1.25rem;
-  letter-spacing: 0.125rem;
+  padding: 1.25rem 4.5rem;
  }
 
- .xlTitle{
-  font-size: 3rem;
+ .xlNavItem{
+  font-size: 1rem;
  }
 }
