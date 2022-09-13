@@ -7,14 +7,15 @@
 .styleFlex{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contactTitle{
-  padding: 0.35rem;
+  padding: 0.55rem;
 }
 
 .contactItem{
-  padding: 0.5rem;
+  padding: 0.35rem;
 }
 
 .contactItem a {
@@ -25,15 +26,11 @@
   color:#1EAE12;
 }
 
-.footerTitle{
-  color: #1EAE12;
-}
-
 .staffLogInBtn{
   display: block;
   border-radius: 1.1rem;
-  padding: 0.5rem;
-  margin-top: 2rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem auto ;
   background-color: #1EAE12;
   color: bisque;
 }
@@ -45,7 +42,7 @@
 }
 
 .copyright{
-  padding: 0.25rem 0 0 ;
+  margin: 5rem 0 0;
   text-align: center;
   color: #1EAE12;
 }
