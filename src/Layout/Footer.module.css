@@ -1,0 +1,71 @@
+.wrapper{
+  padding: 2.5rem;
+  font-size: 0.75rem;
+  background-color: #E6F5E5;
+}
+
+.styleFlex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactTitle{
+  padding: 0.35rem;
+}
+
+.contactItem{
+  padding: 0.5rem;
+}
+
+.contactItem a {
+  color: black;
+}
+
+.contactItem a:hover {
+  color:#1EAE12;
+}
+
+.footerTitle{
+  color: #1EAE12;
+}
+
+.staffLogInBtn{
+  display: block;
+  border-radius: 1.1rem;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  background-color: #1EAE12;
+  color: bisque;
+}
+
+.staffLogInBtn:hover {
+  cursor: pointer;
+  color:#1EAE12;
+  background-color: black;
+}
+
+.copyright{
+  padding: 0.25rem 0 0 ;
+  text-align: center;
+  color: #1EAE12;
+}
+
+
+@media only screen and (min-width: 48rem){
+  .wrapper{
+    padding: 3rem 4.25rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .staffLogInBtn{
+    max-width: 9rem;
+    margin: 1.75rem auto;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 75rem){
+  .styleFlex{
+    justify-content: space-around;
+  }
+}
