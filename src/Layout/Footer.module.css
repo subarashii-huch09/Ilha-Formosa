@@ -1,5 +1,5 @@
 .wrapper{
-  padding: 2.5rem;
+  padding: 1.5rem;
   font-size: 0.75rem;
   background-color: #E6F5E5;
 }
@@ -15,7 +15,7 @@
 }
 
 .contactItem{
-  padding: 0.35rem;
+  padding-top: 0.35rem;
 }
 
 .contactItem a {
@@ -50,22 +50,20 @@
 
 @media only screen and (min-width: 48rem){
   .wrapper{
-    padding: 3rem 4.25rem 1rem;
+    padding: 2rem 4.25rem;
     font-size: 0.85rem;
   }
 
   .staffLogInBtn{
     max-width: 9rem;
-    margin: 1.75rem auto;
+    margin: 1rem auto;
     padding: 1rem;
   }
 }
 
-@media only screen and (min-width: 75rem){
-  .styleFlex{
-    justify-content: space-around;
-  }
+@media only screen and (min-width: 72rem){
   .wrapper{
     font-size: 1.15rem;
+    padding: 2.5rem 20rem;
   }
 }
