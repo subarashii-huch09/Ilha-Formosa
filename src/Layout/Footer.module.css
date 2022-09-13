@@ -65,4 +65,7 @@
   .styleFlex{
     justify-content: space-around;
   }
+  .wrapper{
+    font-size: 1.15rem;
+  }
 }
