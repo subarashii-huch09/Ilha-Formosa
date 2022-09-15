@@ -1,5 +1,4 @@
-.mobileHomeBanner{
-  background-image: url("../images/HomeBanner-1.jpg");
+.bannerSetting{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,8 +7,63 @@
   width: 100vw;
 }
 
+.HomeBanner_1{
+  background-image: url("../images/HomeBanner-1.jpg");
+  
+}
+
+.HomeBanner_2{
+  background-image: url("../images/HomeBanner-2.jpeg");
+}
+
+.swiper{
+  position: relative;
+}
+
+.main{
+  padding: 1.5rem;
+}
+
+.sectionTitle{
+  text-align: center;
+  padding: 1.25rem;
+
+}
+
+.introduction{
+  line-height: 1.7;
+  padding: 0 0.13rem 2rem;
+}
+
+.featureItem{
+ margin-bottom: 2rem;
+ padding: 0.5rem;
+}
+
+.featureImg{
+  border-radius: 5rem 0;
+  box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
+}
+
+.feature{
+  font-size: 0.85rem;
+  padding: 0.75rem 1.5rem;
+  line-height: 1.5;
+  background-color: #CFFF0F;
+  border-radius: 0 4rem 0 2rem;
+  
+}
+.oppositeFeatureImg{
+  border-radius: 0 7rem;
+}
+.oppositeFeature{
+  border-radius: 4rem 0 2rem 0;
+  text-align: right;
+  
+}
+
 @media only screen and (min-width: 48rem){
-  .mobileHomeBanner{
-    height: 90vh; 
+  .bannerSetting{
+    height: 90.9vh; 
   }
 }
