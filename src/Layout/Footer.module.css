@@ -18,10 +18,6 @@
   padding-top: 0.35rem;
 }
 
-.contactItem a {
-  color: black;
-}
-
 .contactItem a:hover {
   color:#1EAE12;
 }
