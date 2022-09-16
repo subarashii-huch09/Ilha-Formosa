@@ -12,11 +12,16 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { Parallax } from "react-parallax";
+import parallaxImg1 from "../images/parallaxImg-1.jpg";
 
 const Home = () => {
-  useEffect(()=>{
-    AOS.init()
-  })
+  const email = "info@ilhaformosa.co.nz";
+  const phoneNum = "+64-4-123-4567";
+
+  useEffect(() => {
+    AOS.init();
+  });
 
   return (
     <>
@@ -45,7 +50,7 @@ const Home = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className={`${styles.bannerSetting} ${styles.HomeBanner_2}`}
+            className={`${styles.bannerSetting} ${styles.HomeBanner_3}`}
           ></div>
           <Link to="scroll" spy={true} smooth={true}>
             <ScrollDown />
@@ -77,8 +82,9 @@ const Home = () => {
               <div className={styles.feature} data-aos="fade-left">
                 <h3>The meaning of Ilha Formosa</h3>
                 <p>
-                  In 1544, Portuguese sailors first passed by Taiwan, named Taiwan ' Ilha Formosa' meaning
-                  "Beautiful Island" due to the breathtaking scenery. 
+                  In 1544, Portuguese sailors first passed by Taiwan, named
+                  Taiwan ' Ilha Formosa' meaning "Beautiful Island" due to the
+                  breathtaking scenery.
                 </p>
               </div>
             </li>
@@ -96,10 +102,9 @@ const Home = () => {
               >
                 <h3>Authenticity guaranteed</h3>
                 <p>
-                  We use the best ingredients to make our dishes. Our chefs
-                  are trained in Taiwan and brought their skills to New Zealand.
-                  We offer the most authentic Taiwanese cuisine outside of
-                  Taiwan!
+                  We use the best ingredients to make our dishes. Our chefs are
+                  trained in Taiwan and brought their skills to New Zealand. We
+                  offer the most authentic Taiwanese cuisine outside of Taiwan!
                 </p>
               </div>
             </li>
@@ -114,8 +119,8 @@ const Home = () => {
               <div className={styles.feature} data-aos="fade-left">
                 <h3>A night market brought to you</h3>
                 <p>
-                  Enjoy all the flavours of a night market right in
-                  Ilha Formosa! We offer a wide range of Taiwanese street food
+                  Enjoy all the flavours of a night market right in Ilha
+                  Formosa! We offer a wide range of Taiwanese street food
                   specialities, so you can be sure to find something that will
                   suit your taste buds.
                 </p>
@@ -123,7 +128,44 @@ const Home = () => {
             </li>
           </ul>
         </section>
-        <section></section>
+      </main>
+      <Parallax bgImage={parallaxImg1} strength={300} width={"100vw"}>
+        <div className={styles.parallaxImg1}></div>
+      </Parallax>
+      <main className={styles.main}>
+        <section className={styles.section}>
+          <ul className={styles.contactInfoList}>
+            <li className={styles.contactInfoItem}>
+              <h4 className={styles.contactTitle}>LOCATION</h4>
+              <div className={styles.contactContent}>
+                <p>123 Oriental Parade</p>
+                <p>Wellington 6011</p>
+              </div>
+            </li>
+            <li className={styles.contactInfoItem}>
+              <h4 className={styles.contactTitle}>HOURS</h4>
+              <div className={styles.contactContent}>
+                <p>
+                  Tuesday - Saturday <strong>|</strong> 12pm until late
+                </p>
+                <p>
+                  Sunday - Monday <strong>|</strong> Closed
+                </p>
+              </div>
+            </li>
+            <li className={styles.contactInfoItem}>
+              <h4 className={styles.contactTitle}>CONTACT</h4>
+              <div className={styles.contactContent}>
+                <p>
+                  <a href={`tel:${phoneNum}`}> 04-123-4567</a>
+                </p>
+                <p>
+                  <a href={`mailto:${email}`}> info@ilhaformosa.co.nz</a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
     </>
   );
