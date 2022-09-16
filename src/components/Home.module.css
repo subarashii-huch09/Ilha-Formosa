@@ -138,6 +138,7 @@
   .contactInfoItem{
     grid-template-columns: 1fr;
     gap: 1rem;
+    font-size: 1.1rem;
   }
 
   .contactInfoList{
