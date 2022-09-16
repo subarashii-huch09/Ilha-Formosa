@@ -53,8 +53,8 @@ const Home = () => {
         </SwiperSlide>
       </Swiper>
 
-      <main className={styles.main}>
-        <section>
+      <main id="scroll" className={styles.main}>
+        <section className={styles.section}>
           <h2 className={styles.sectionTitle}>The taste of Taiwan</h2>
           <p className={styles.introduction}>
             <strong>Ilha Formosa</strong> is a Taiwanese restaurant that offers
@@ -64,8 +64,8 @@ const Home = () => {
             gastronomic journey to Taiwan !
           </p>
         </section>
-        <section id="scroll">
-          <ul>
+        <section>
+          <ul className={styles.featureList}>
             <li className={styles.featureItem}>
               <div data-aos="fade-right">
                 <img
@@ -77,8 +77,8 @@ const Home = () => {
               <div className={styles.feature} data-aos="fade-left">
                 <h3>The meaning of Ilha Formosa</h3>
                 <p>
-                  Ilha Formosa means "Beautiful Island" in Portuguese, and this
-                  is what we want to offer you: a taste of Taiwan.
+                  In 1544, Portuguese sailors first passed by Taiwan, named Taiwan ' Ilha Formosa' meaning
+                  "Beautiful Island" due to the breathtaking scenery. 
                 </p>
               </div>
             </li>
@@ -96,10 +96,10 @@ const Home = () => {
               >
                 <h3>Authenticity guaranteed</h3>
                 <p>
-                  We only use the best ingredients to make our dishes. Our chefs
-                  are also Taiwanese who have been trained in Taiwan and brought
-                  their skills to New Zealand. We offer the most authentic
-                  Taiwanese cuisine outside of Taiwan!
+                  We use the best ingredients to make our dishes. Our chefs
+                  are trained in Taiwan and brought their skills to New Zealand.
+                  We offer the most authentic Taiwanese cuisine outside of
+                  Taiwan!
                 </p>
               </div>
             </li>
@@ -114,8 +114,8 @@ const Home = () => {
               <div className={styles.feature} data-aos="fade-left">
                 <h3>A night market brought to you</h3>
                 <p>
-                  You can now enjoy all the flavours of a night market right in
-                  your own home! We offer a wide range of Taiwanese street food
+                  Enjoy all the flavours of a night market right in
+                  Ilha Formosa! We offer a wide range of Taiwanese street food
                   specialities, so you can be sure to find something that will
                   suit your taste buds.
                 </p>
@@ -123,6 +123,7 @@ const Home = () => {
             </li>
           </ul>
         </section>
+        <section></section>
       </main>
     </>
   );

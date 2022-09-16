@@ -1,69 +1,130 @@
-.bannerSetting{
+.bannerSetting {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color:black;
+  background-color: black;
   height: 55vh;
   width: 100vw;
 }
 
-.HomeBanner_1{
+.HomeBanner_1 {
   background-image: url("../images/HomeBanner-1.jpg");
-  
 }
 
-.HomeBanner_2{
+.HomeBanner_2 {
   background-image: url("../images/HomeBanner-2.jpeg");
 }
 
-.swiper{
+.swiper {
   position: relative;
 }
 
-.main{
-  padding: 1.5rem;
+.main {
+  padding: 0.5rem 1.75rem;
+}
+.section {
+  margin: 1rem auto 2.5rem;
+  padding-top: 1.25rem;
 }
 
-.sectionTitle{
+.sectionTitle {
   text-align: center;
-  padding: 1.25rem;
-
+  padding-bottom: 2rem;
+  font-family: "Caveat", "Lato", "Combo", cursive, sans-serif;
+  font-size: 2.25rem;
+  color: #1eae12;
 }
 
-.introduction{
-  line-height: 1.7;
-  padding: 0 0.13rem 2rem;
+.introduction {
+  line-height: 1.85;
+  padding: 1.5rem 0.75rem 1rem;
+  letter-spacing: 0.05rem;
+  background-image: url("../images/taiwan-outline.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 3.5rem;
 }
 
-.featureItem{
- margin-bottom: 2rem;
- padding: 0.5rem;
+.featureItem {
+  width: 98%;
+  margin: 0 auto 2rem;
+  padding: 1.2rem;
 }
 
-.featureImg{
+.featureImg {
   border-radius: 5rem 0;
   box-shadow: 0 -5px 3px -3px black, 0 5px 3px -3px black;
 }
 
-.feature{
+.feature {
+  max-width: 21.5rem;
   font-size: 0.85rem;
   padding: 0.75rem 1.5rem;
   line-height: 1.5;
-  background-color: #CFFF0F;
+  background-color: #cfff0f;
   border-radius: 0 4rem 0 2rem;
-  
 }
-.oppositeFeatureImg{
+.oppositeFeatureImg {
   border-radius: 0 7rem;
 }
-.oppositeFeature{
+.oppositeFeature {
   border-radius: 4rem 0 2rem 0;
   text-align: right;
-  
 }
 
-@media only screen and (min-width: 48rem){
-  .bannerSetting{
-    height: 90.9vh; 
+@media only screen and (min-width: 32rem) {
+  .introduction {
+    width: 28rem;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    line-height: 2.2;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .bannerSetting {
+    height: 90.9vh;
+  }
+
+  .introduction {
+    margin-bottom: 5.5rem;
+    font-size: 1.1rem;
+  }
+
+  .featureItem{
+    max-width: 55%;
+    margin: 0 auto 3rem;
+  }
+  .feature {
+    font-size: 1.15rem;
+  }
+}
+@media only screen and (min-width: 72rem) {
+  .sectionTitle {
+    padding: 2rem 0;
+  }
+  .introduction {
+    width: 38.5rem;
+    margin-top: 2.5rem;
+  }
+  .featureList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    max-width: 85rem;
+    margin: 0 auto;
+  }
+
+  .featureItem {
+    min-width: 95%;
+  }
+  
+  .oppositeFeature {
+    border-radius: 0 4rem 0 2rem;
+    text-align: left;
+  }
+
+  .oppositeFeatureImg {
+    border-radius: 5rem 0;
   }
 }
