@@ -15,6 +15,10 @@
   background-image: url("../images/HomeBanner-2.jpeg");
 }
 
+.HomeBanner_3 {
+  background-image: url("../images/HomeBanner-3.jpg");
+}
+
 .swiper {
   position: relative;
 }
@@ -73,12 +77,44 @@
   text-align: right;
 }
 
+.parallaxImg1{
+  height: 22rem;
+}
+
+.contactInfoList{
+  max-width: 25rem;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+}
+
+.contactTitle{
+  color:#1eae12;
+}
+
+.contactInfoItem{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap:3.25rem;
+  font-size: 0.85rem;
+  margin-bottom: 3rem;
+}
+
+.contactContent p {
+  padding-bottom: 0.25rem;
+}
+
+
 @media only screen and (min-width: 32rem) {
   .introduction {
     width: 28rem;
     margin: 0 auto;
     font-size: 0.95rem;
     line-height: 2.2;
+  }
+
+  .contactInfoItem{
+    gap:6.5rem;
   }
 }
 @media only screen and (min-width: 48rem) {
@@ -97,6 +133,19 @@
   }
   .feature {
     font-size: 1.15rem;
+  }
+
+  .contactInfoItem{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contactInfoList{
+    max-width: 38rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 72rem) {
@@ -118,7 +167,7 @@
   .featureItem {
     min-width: 95%;
   }
-  
+
   .oppositeFeature {
     border-radius: 0 4rem 0 2rem;
     text-align: left;
@@ -127,4 +176,8 @@
   .oppositeFeatureImg {
     border-radius: 5rem 0;
   }
+
+  .parallaxImg1{
+  height: 48rem;
+}
 }
