@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Combo&family=Lato&display=swap");
+
+.wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Caveat','Lato','Combo', cursive, sans-serif;
+}
+
+.LogoMobile{
+  display: block;
+  padding: 0.85rem  3rem 0.25rem  0.5rem;
+}
+
+.navWrapper{
+  position: relative;
+}
+.menuIconContainer{
+  margin: 1.5rem;
+}
+
+.menuIcon{
+  color: #1EAE12;
+  stroke-width: 0.5rem;
+  stroke: #CFFF0F;
+}
+
+.nav{
+  min-width: 100vw ;
+  min-height: 100vh;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.866);
+  z-index: 99;
+}
+
+.xlNav {
+  display: none;
+}
+
+.navList{
+  padding-top: 2.75rem;
+}
+
+.navItem{
+  display: block;
+  padding: 1.25rem 5rem;
+  font-size: 1.25rem;
+  color: #0c5505;
+  font-weight: 900;
+  text-align: center;
+}
+
+.navItem:hover{
+  background-color: #1EAE12;
+  color:antiquewhite;
+}
+
+.close{
+  color:red;
+  position: absolute;
+  top: 0.95rem;
+  right: 0.75rem;
+}
+
+@media only screen and (min-width: 48rem){
+  .LogoMobile, .navWrapper{
+    display: none;
+  }
+
+  .xlNav{
+    display: block;
+    min-width: 100%;
+    margin: 0 auto;
+    padding: 1.15rem 1.2rem;
+    background-color:#E6F5E5 ;
+    z-index: 99;
+  }
+  .xlNavList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .xlNavItem{
+    display: block;
+    padding: 1.125rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.125rem;
+    color: rgb(1, 0, 0);
+    font-weight: 900;
+  }
+
+  .xlNavItem:hover{
+    color:#1EAE12;
+  }
+
+  .xlListFlex{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media only screen and (min-width: 75rem){
+ .xlNav{
+  padding: 1.25rem 4.5rem;
+ }
+
+ .xlNavItem{
+  font-size: 1.5rem;
+ }
+}
