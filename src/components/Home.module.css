@@ -81,10 +81,49 @@
   height: 22rem;
 }
 
+.popularOptionImg{
+  border-radius: 1.5rem;
+  box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.87);
+-webkit-box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.87);
+-moz-box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.87);
+}
+
+.popularOptionList{
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.optionItem{
+  margin-bottom: 4.25rem;
+  position: relative;
+}
+
+.optionTitle{
+  position: absolute;
+  bottom:1rem;
+  left:0.5rem;
+  background-color: #E6F5E5;
+  color:black;
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  border-radius: 2rem;
+}
+
+.medal{
+  position: absolute;
+  top:0.25rem;
+  right:0.25rem;
+  background-color: rgb(249, 249, 240);
+  border-radius: 2rem;
+  
+}
+
+
 .contactInfoList{
   max-width: 25rem;
   margin: 0 auto;
-  /* outline: 1px solid red; */
+  padding: 1rem;
 }
 
 .contactTitle{
@@ -135,20 +174,45 @@
     font-size: 1.15rem;
   }
 
+
+  .popularOptionList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* outline:1px solid red; */
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+  }
+
+  .popularOptionImg{
+    height: 15rem;
+    width: 20rem;
+  }
   .contactInfoItem{
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
     font-size: 1.1rem;
+    padding: 0 1.125rem;
   }
 
   .contactInfoList{
-    max-width: 38rem;
+    max-width: 42.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
   }
 }
+
+@media only screen and (min-width: 64rem){
+  .medal{
+    top: 9rem;
+    right: 0;
+    left:1rem;
+  }
+} 
+
 @media only screen and (min-width: 72rem) {
   .sectionTitle {
     padding: 2rem 0;
@@ -181,4 +245,13 @@
   .parallaxImg1{
   height: 48rem;
 }
+
+  .popularOptionList{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .contactInfoList{
+    max-width: 52rem;
 }
+}
+
