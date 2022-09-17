@@ -24,6 +24,7 @@ const Map =() => {
         height: "55vh",
         padding: "1.25rem",
         margin: "0",
+        zIndex:"-1"
       }}
     >
       <TileLayer
