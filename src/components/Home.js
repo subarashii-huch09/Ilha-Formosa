@@ -25,6 +25,7 @@ import redRiceCake from "../images/menu/redRiceCake.jpeg"
 import { FaRegGrinHearts } from "react-icons/fa";
 import Map from "../Layout/Map"
 
+import "csshake";
 
 const Home = () => {
   const email = "info@ilhaformosa.co.nz";
@@ -147,7 +148,10 @@ const Home = () => {
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>People's favourites</h2>
           <ul className={styles.popularOptionList}>
-            <li className={styles.optionItem} data-aos="zoom-in-up">
+            <li
+              className={`${styles.optionItem} shake shake-slow>`}
+              data-aos="zoom-in-up"
+            >
               <img
                 className={styles.popularOptionImg}
                 src={oysterOmelet}
@@ -160,7 +164,10 @@ const Home = () => {
                 color={"red"}
               ></FaRegGrinHearts>
             </li>
-            <li className={styles.optionItem} data-aos="zoom-in-up">
+            <li
+              className={`${styles.optionItem} shake shake-slow>`}
+              data-aos="zoom-in-up"
+            >
               <img
                 className={styles.popularOptionImg}
                 src={pineappleCake}
@@ -174,7 +181,10 @@ const Home = () => {
               ></FaRegGrinHearts>
             </li>
 
-            <li className={styles.optionItem} data-aos="zoom-in-up">
+            <li
+              className={`${styles.optionItem} shake shake-slow>`}
+              data-aos="zoom-in-up"
+            >
               <img
                 className={styles.popularOptionImg}
                 src={redRiceCake}
@@ -187,7 +197,10 @@ const Home = () => {
                 color={"red"}
               ></FaRegGrinHearts>
             </li>
-            <li className={styles.optionItem} data-aos="zoom-in-up">
+            <li
+              className={`${styles.optionItem} shake shake-slow>`}
+              data-aos="zoom-in-up"
+            >
               <img
                 className={styles.popularOptionImg}
                 src={taroCake}
@@ -200,7 +213,10 @@ const Home = () => {
                 color={"red"}
               ></FaRegGrinHearts>
             </li>
-            <li className={styles.optionItem} data-aos="zoom-in-up">
+            <li
+              className={`${styles.optionItem} shake shake-slow>`}
+              data-aos="zoom-in-up"
+            >
               <img
                 className={styles.popularOptionImg}
                 src={wheelCake}
@@ -213,7 +229,10 @@ const Home = () => {
                 color={"red"}
               ></FaRegGrinHearts>
             </li>
-            <li className={styles.optionItem} data-aos="zoom-in-up">
+            <li
+              className={`${styles.optionItem} shake shake-slow>`}
+              data-aos="zoom-in-up"
+            >
               <img
                 className={styles.popularOptionImg}
                 src={stinkyTofu}
