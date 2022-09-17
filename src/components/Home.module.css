@@ -77,64 +77,63 @@
   text-align: right;
 }
 
-.parallaxImg1{
+.parallaxImg1 {
   height: 22rem;
 }
 
-.popularOptionImg{
+.popularOptionImg {
   border-radius: 1.5rem;
-  box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.87);
--webkit-box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.87);
--moz-box-shadow: 10px 13px 13px -3px rgba(0,0,0,0.87);
+  box-shadow: 10px 13px 13px -3px rgba(0, 0, 0, 0.87);
+  -webkit-box-shadow: 10px 13px 13px -3px rgba(0, 0, 0, 0.87);
+  -moz-box-shadow: 10px 13px 13px -3px rgba(0, 0, 0, 0.87);
 }
 
-.popularOptionList{
-  margin-top: 2rem;
+.popularOptionList {
+  margin: 2rem auto auto;
   padding: 0.5rem;
 }
 
-.optionItem{
+.optionItem {
   margin-bottom: 4.25rem;
   position: relative;
 }
 
-.optionTitle{
+.optionTitle {
   position: absolute;
-  bottom:1rem;
-  left:0.5rem;
-  background-color: #E6F5E5;
-  color:black;
+  bottom: 2rem;
+  left: 1rem;
+  background-color: #e6f5e5;
+  color: black;
   font-weight: 900;
   font-size: 1.2rem;
-  padding: 0.75rem;
+  padding: 1rem;
   border-radius: 2rem;
 }
 
-.medal{
+.medal {
   position: absolute;
-  top:0.25rem;
-  right:0.25rem;
+  bottom: 4.5rem;
+  left: 1rem;
   background-color: rgb(249, 249, 240);
   border-radius: 2rem;
-  
 }
 
-
-.contactInfoList{
+.contactInfoList {
   max-width: 25rem;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: -4.5rem auto 5rem;
+  padding-left: 1.25rem;
 }
 
-.contactTitle{
-  color:#1eae12;
+.contactTitle {
+  color: #1eae12;
 }
 
-.contactInfoItem{
+.contactInfoItem {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  justify-content: center;
   align-items: center;
-  gap:3.25rem;
+  gap: 1.25rem;
   font-size: 0.85rem;
   margin-bottom: 3rem;
 }
@@ -143,18 +142,27 @@
   padding-bottom: 0.25rem;
 }
 
-
 @media only screen and (min-width: 32rem) {
+   .section{
+    margin: 5rem 1.5rem;
+  }
+
   .introduction {
     width: 28rem;
     margin: 0 auto;
     font-size: 0.95rem;
     line-height: 2.2;
   }
-
-  .contactInfoItem{
-    gap:6.5rem;
+  
+  .contactInfoList{
+    padding-bottom: 5rem;
   }
+
+  .contactInfoItem {
+    gap: 3.5rem;
+    font-size: 1rem;
+  }
+
 }
 @media only screen and (min-width: 48rem) {
   .bannerSetting {
@@ -166,7 +174,7 @@
     font-size: 1.1rem;
   }
 
-  .featureItem{
+  .featureItem {
     max-width: 55%;
     margin: 0 auto 3rem;
   }
@@ -174,8 +182,7 @@
     font-size: 1.15rem;
   }
 
-
-  .popularOptionList{
+  .popularOptionList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -185,19 +192,32 @@
     padding: 2.5rem;
   }
 
-  .popularOptionImg{
-    height: 15rem;
-    width: 20rem;
-  }
-  .contactInfoItem{
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    font-size: 1.1rem;
-    padding: 0 1.125rem;
+  .popularOptionImg {
+    height: 14rem;
+    width: 80%;
+    margin: 0 auto;
   }
 
-  .contactInfoList{
-    max-width: 42.5rem;
+  .optionTitle{
+    bottom: 0;
+    left: 1.75rem;
+    padding: 0.5rem;
+  }
+
+  .medal{
+    bottom:2rem;
+
+  }
+
+
+  .contactInfoItem {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    font-size: 1.15rem;
+  }
+
+  .contactInfoList {
+    max-width: 48rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -205,13 +225,11 @@
   }
 }
 
-@media only screen and (min-width: 64rem){
-  .medal{
-    top: 9rem;
-    right: 0;
-    left:1rem;
+@media only screen and (min-width: 64rem) {
+  .popularOptionImg {
+    width: 72.5%;
   }
-} 
+}
 
 @media only screen and (min-width: 72rem) {
   .sectionTitle {
@@ -242,16 +260,15 @@
     border-radius: 5rem 0;
   }
 
-  .parallaxImg1{
-  height: 48rem;
-}
-
-  .popularOptionList{
-    grid-template-columns: repeat(3,1fr);
+  .parallaxImg1 {
+    height: 48rem;
   }
 
-  .contactInfoList{
-    max-width: 52rem;
-}
-}
+  .popularOptionList {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
+  .contactInfoList {
+    max-width: 52rem;
+  }
+}
