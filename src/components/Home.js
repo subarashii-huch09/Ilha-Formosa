@@ -15,6 +15,17 @@ import "aos/dist/aos.css";
 import { Parallax } from "react-parallax";
 import parallaxImg1 from "../images/parallaxImg-1.jpg";
 
+import oysterOmelet from "../images/menu/oysterOmelet.jpeg"
+import pineappleCake from "../images/menu/pineapplecakes.jpeg"
+import stinkyTofu from "../images/menu/stinkyTofu.jpeg"
+import wheelCake from "../images/menu/wheelcake.jpeg"
+import taroCake from "../images/menu/taroCake.jpeg"
+import redRiceCake from "../images/menu/redRiceCake.jpeg"
+
+import { FaRegGrinHearts } from "react-icons/fa";
+import Map from "../Layout/Map"
+
+
 const Home = () => {
   const email = "info@ilhaformosa.co.nz";
   const phoneNum = "+64-4-123-4567";
@@ -134,6 +145,92 @@ const Home = () => {
       </Parallax>
       <main className={styles.main}>
         <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>People's favourites</h2>
+          <ul className={styles.popularOptionList}>
+            <li className={styles.optionItem} data-aos="zoom-in-up">
+              <img
+                className={styles.popularOptionImg}
+                src={oysterOmelet}
+                alt="popular option"
+              />
+              <h4 className={styles.optionTitle}>Oyster Omelet</h4>
+              <FaRegGrinHearts
+                className={styles.medal}
+                size={42}
+                color={"red"}
+              ></FaRegGrinHearts>
+            </li>
+            <li className={styles.optionItem} data-aos="zoom-in-up">
+              <img
+                className={styles.popularOptionImg}
+                src={pineappleCake}
+                alt="popular option"
+              />
+              <h4 className={styles.optionTitle}> Pineapple Cake</h4>
+              <FaRegGrinHearts
+                className={styles.medal}
+                size={42}
+                color={"red"}
+              ></FaRegGrinHearts>
+            </li>
+
+            <li className={styles.optionItem} data-aos="zoom-in-up">
+              <img
+                className={styles.popularOptionImg}
+                src={redRiceCake}
+                alt="popular option"
+              />
+              <h4 className={styles.optionTitle}>Red Rice Cake</h4>
+              <FaRegGrinHearts
+                className={styles.medal}
+                size={42}
+                color={"red"}
+              ></FaRegGrinHearts>
+            </li>
+            <li className={styles.optionItem} data-aos="zoom-in-up">
+              <img
+                className={styles.popularOptionImg}
+                src={taroCake}
+                alt="popular option"
+              />
+              <h4 className={styles.optionTitle}>Taro Cake</h4>
+              <FaRegGrinHearts
+                className={styles.medal}
+                size={42}
+                color={"red"}
+              ></FaRegGrinHearts>
+            </li>
+            <li className={styles.optionItem} data-aos="zoom-in-up">
+              <img
+                className={styles.popularOptionImg}
+                src={wheelCake}
+                alt="popular option"
+              />
+              <h4 className={styles.optionTitle}>Wheel Cake</h4>
+              <FaRegGrinHearts
+                className={styles.medal}
+                size={42}
+                color={"red"}
+              ></FaRegGrinHearts>
+            </li>
+            <li className={styles.optionItem} data-aos="zoom-in-up">
+              <img
+                className={styles.popularOptionImg}
+                src={stinkyTofu}
+                alt="popular option"
+              />
+              <h4 className={styles.optionTitle}>Stinky Tofu</h4>
+              <FaRegGrinHearts
+                className={styles.medal}
+                size={42}
+                color={"red"}
+              ></FaRegGrinHearts>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <main className={styles.main}>
+        <section className={styles.section}>
           <ul className={styles.contactInfoList}>
             <li className={styles.contactInfoItem}>
               <h4 className={styles.contactTitle}>LOCATION</h4>
@@ -167,6 +264,7 @@ const Home = () => {
           </ul>
         </section>
       </main>
+      <Map />
     </>
   );
 };
